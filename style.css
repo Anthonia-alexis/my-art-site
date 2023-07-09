@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url(hands.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 95%;
+    margin-left: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #d5d7da;
+
+}
+
+.navbar ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover::after {
+    width: 100%;
+
+}
+
+.mailbox {
+    color: #d5d7da;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.mailbox:hover {
+    color: chartreuse;
+    background-color: transparent;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: -10px;
+
+}
+
+#logo {
+    width: 120px;
+    cursor: pointer;
+    font-size: 10px;
+    padding-top: -10px;
+    padding-left: 0px;
+    padding-right: 60px;
+    margin-right: 5px;
+    text-align: left;
+    position: relative;
+    background: linear-gradient(27deg, #fd7e14, #ffc107, #dc3545, #17a2b8, #ffc107, #20c997);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content h2 {
+    font-size: 70px;
+    margin-top: 40px;
+    background: linear-gradient(27deg, #17a2b8, #ff0080, #17a2b8, #ffc107, #20c997);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.info {
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+    background-color: #009688;
+}
+
+button:hover {
+    border: none;
+}
+
+footer {
+    text-align: left;
+    margin-top: 150px;
+}
